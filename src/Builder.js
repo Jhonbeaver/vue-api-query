@@ -110,7 +110,7 @@ export default class Builder {
   }
 
   params(payload) {
-    if (payload === undefined || payload.constructor !== Object) {
+    if (payload === undefined) {
       throw new Error('You must pass a payload/object as param.')
     }
 
